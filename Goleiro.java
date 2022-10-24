@@ -156,7 +156,6 @@ public class Goleiro extends Particula{
 		if(gerarAAG()>=1&&gerarAAG()<=4) {
 			for(int i = 0; i<=gerarAAG();i++) {
 				marcado=positionx--;
-				System.out.println("x="+ marcado);
 			}
 			return coletarvalores(marcado,0,0);
 				
@@ -166,13 +165,10 @@ public class Goleiro extends Particula{
 			for(int i=1;i<=4;i++) {
 				j=j+1;
 				marcado=positionx--;
-				System.out.println("x="+ marcado);
 			}
 			marcado=positiony+1;
-			System.out.println("y="+marcado);
 			
 			for(int i=1;i<=(gerarAAG()-j);i++) {
-				System.out.println("X="+a);
 				a--;
 			}
 			return coletarvalores(a,marcado,0);
@@ -180,20 +176,15 @@ public class Goleiro extends Particula{
 		else if(gerarAAG()<=12) {
 			for(int i=1;i<=4;i++) {
 				marcado=positionx--;
-				System.out.println("x="+marcado);
 			}
 			marcado=positiony+1;
-			System.out.println("y="+marcado);
 			j=4;
 			for(int i=1;i<=4;i++) {
 				j=j+1;
-				System.out.println("X="+a);
 				a--;
 			}
 			marcado=positiony+2;
-			System.out.println("y="+marcado);
 			for(int i=1; i<=(gerarAAG()-j);i++) {
-				System.out.println("xx="+b);
 				b--;
 			}
 			return coletarvalores(a,marcado,b);
@@ -201,27 +192,20 @@ public class Goleiro extends Particula{
 		else {
 			for(int i=1; i<=4;i++) {
 				marcado=positionx--;
-				System.out.println("x="+marcado);
 			}
 			marcado=positiony+1;
-			System.out.println("y="+marcado);
 			for(int i=1; i<=4;i++) {
-				System.out.println("x="+a);
 				a--;
 			}
 			marcado=positiony+2;
-			System.out.println("y="+marcado);
 			j=8;
 			for(int i=1;i<=4;i++) {
 				j=j+1;
-				System.out.println("xx="+b);
 				b--;
 			}
 			marcado=positiony+3;
-			System.out.println("y="+marcado);
 			
 			for(int i=1; i<=(gerarAAG()-j);i++) {
-				System.out.println("xx="+c);
 				c--;
 			}
 			return coletarvalores(a,marcado,c);
